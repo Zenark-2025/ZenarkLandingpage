@@ -30,7 +30,7 @@ const Header = () => {
       });
     }, { rootMargin: '-20% 0px -70% 0px' });
 
-    const sections = ['about', 'features', 'offerings', 'approach', 'management', 'team', 'contact'];
+    const sections = ['about', 'features', 'offerings', 'approach', 'management', /*'team',*/ 'contact'];
     sections.forEach(id => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
@@ -52,7 +52,7 @@ const Header = () => {
             <li><a href="#offerings" className={activeSection === 'offerings' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Offerings</a></li>
             <li><a href="#approach" className={activeSection === 'approach' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Our Approach</a></li>
             <li><a href="#management" className={activeSection === 'management' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Management</a></li>
-            <li><a href="#team" className={activeSection === 'team' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Team</a></li>
+
             <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
@@ -204,7 +204,7 @@ const Approach = () => {
     </section>
   );
 };
-
+/*
 const Team = () => {
   const members = [
     { name: 'Wajahat Sayeed', role: 'Founder & CEO', linkedin: 'https://www.linkedin.com/in/wajahatsayeed/' },
@@ -234,7 +234,7 @@ const Team = () => {
     </section>
   );
 };
-
+*/
 const Management = () => {
   return (
     <section id="management">
@@ -250,7 +250,7 @@ const Management = () => {
               <img src="/pic1.jpeg" alt="Wajahat Sayeed Khuddusi" className="management-img" />
             </div>
             <div className="management-info">
-              <h3>Wajahat Sayeed Khuddusi, MBBS (BMCRI) , Harvard alumni</h3>
+              <h3>Wajahat Sayeed Khuddusi, MBBS (BMCRI) , Aspire alumni</h3>
               <h4>CEO and founder</h4>
               <p>As I balance my medical education at BMCRI with my role as an entrepreneur, my focus remains steadfast on uplifting the lives of Indians through purposeful technology. While my roots are in student advocacy, my vision encompasses the well-being of our entire nation.</p>
               <p>At Zenark, we don't just solve problems; we strive to eliminate the social barriers that hold us back. I have always maintained that the value of an endeavor is measured by its human impact, not its financial return. We must look past the immediate challenges of today to see what we can become. For the betterment of humanity, the sight of humankind should lie beyond the horizon.</p>
@@ -264,7 +264,7 @@ const Management = () => {
             </div>
             <div className="management-info">
               <h3>Dr. Rohit Walwaikar</h3>
-              <h4>MBBS (AIIMS) & MD Psychiatry (NIMHANS), Chief Advisory Board Member</h4>
+              <h4>MBBS , MD Psychiatry (AIR 3) , DNB Psychiatry, Chief Advisory Board Member</h4>
               <p>My career in psychiatry has been defined by a commitment to clinical excellence, academic rigor, and a vision for an equitable, interdisciplinary future for mental healthcare. Having earned my MD with a distinction of 3rd rank and successfully clearing the DNB National level examination, I have always strived for excellence. I strictly believe that mental health does not exist in a vacuum.</p>
               <p>Currently, I serve as a Consultant Psychiatrist at the BITS Goa campus and as a Psychiatrist for a Swiss digital health firm. These dual roles allow me to operate at the cutting edge of two vital frontiers: the immediate, high-stakes environment of student mental health and the scalable, tech-driven future of global digital interventions.</p>
 
@@ -292,7 +292,7 @@ const Management = () => {
             </div>
             <div className="management-info">
               <h3>Dr Myle Muralidhar</h3>
-              <h4>Consultant Psychiatrist and De-addiction specialist, Chief Advisory Member</h4>
+              <h4>MBBS (AIIMS) & MD Psychiatry (NIMHANS), Consultant Psychiatrist and De-addiction specialist, Chief Advisory Member</h4>
             </div>
           </FadeSection>
 
@@ -413,7 +413,6 @@ function App() {
         <Offerings />
         <Approach />
         <Management />
-        <Team />
         <Timeline />
         <Contact />
       </main>
