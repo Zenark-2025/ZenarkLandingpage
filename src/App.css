@@ -78,6 +78,24 @@ nav {
   background-color: var(--primary-light);
 }
 
+.nav-links a.login-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a.login-btn:hover {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.nav-links a.login-btn:after {
+  display: none;
+}
+
 .hamburger {
   display: none;
   background: transparent;

@@ -52,7 +52,7 @@ const Header = () => {
             <li><a href="#offerings" className={activeSection === 'offerings' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Offerings</a></li>
             <li><a href="#approach" className={activeSection === 'approach' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Our Approach</a></li>
             <li><a href="#management" className={activeSection === 'management' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Management</a></li>
-
+            <li><a href="https://zenark-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="login-btn" onClick={() => setMenuOpen(false)}>Login</a></li>
             <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''} onClick={() => setMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
